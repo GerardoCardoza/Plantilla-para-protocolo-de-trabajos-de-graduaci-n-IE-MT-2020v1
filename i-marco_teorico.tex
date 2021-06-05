@@ -32,7 +32,7 @@ El flujo de diseño nos muestra los pasos requeridos para poder realizar una ser
 
  \begin{figure}[t]
     \centering
-    \includegraphics[width=0.45\textwidth]{figuras/Font.JPG}
+    \includegraphics[width=0.57\textwidth]{figuras/Font.JPG}
     \caption{Diagrama del Front-End}
     \label{fig:mesh1}
 \end{figure}
@@ -59,7 +59,7 @@ Esta parte va mas inclinada a la implementación del circuito en físico. Esta t
  \cite{charls} 
 \begin{figure}[t]
     \centering
-    \includegraphics[width=0.45\textwidth]{figuras/Back.JPG}
+    \includegraphics[width=0.57\textwidth]{figuras/Back.JPG}
     \caption{Diagrama del Back-End}
     \label{fig:mesh1}
 \end{figure}
@@ -148,7 +148,7 @@ La base de datos FSDB, logra almacenar los resultados de la simulación.
 Al utilizar la informacion que proporcionan estas bases de datos, verdi tiene unas herramientas de análisis que resultan ser muy útiles dependiendo de la aplicación que se quiera dar, estas son: Análisis de estructura, comportamiento, evaluación y Mensajes.
 
 
-  \subsection{Extracción de parásitos}
+ \subsection*{Extracción de parásitos}
 
 La extracción de parásitos se puede realizar después de haber hecho las pruebas pertinentes en el flujo del diseño, este pertenece a la parte del Back-End y se puede realizar correctamente después de realizar el lvs y el drc, que son parte del diseño del layout después con HSPICE se busca el archivo generado con parásitos para ver como se comporta la simulación, en donde también se utiliza el starRc. Todo esto es con el fin de garantizar que el diseño VLSI es factible y que las capacitancias parásitas no va a afectar el circuito.
 
@@ -157,14 +157,14 @@ Esto sucede al jugar con los transistores que generan lo que se llaman capacitan
 El fin de la extracción de parásitos es la representación  de los efectos electromagnéticos que los cables y las difusiones puedan generar al momento de correr la simulación, en componentes como la capacitancia, resistencia e inductancia.
  \cite{charls} 
 
-  \subsection{StarRC}
+  \subsection*{StarRC}
 
 Esta herramienta se considera la solución para la extracción de parásitos. Esta herramienta amplia los beneficios de rendimiento , en donde se basa en mejorar la arquitectura y hace que el proceso sea mas efectivo. Este programa logra eliminar la necesidad de lo que es la escritura parásita en un netlist y este mismo logra ahorrar el espacio del disco. Mas que todo se especializa en optimizar el proceso reduciendo las capacitancias parásitas que puedan llegar a afectar el comportamiento deseado de un circuito.
 
  \cite{StarRc} 
 
 
-\subsection{HSPICE}
+\subsection*{HSPICE}
 
 Hspice es un herramienta de synopsys que permite realizar las simulaciones de un programa generado (.spf), en donde viene de la mano con Custom Wave View. El fin de este programa es ver una simulación y lograr ver el comportamiento del circuito. 
 Este se considera uno de los simuladores mas potentes, ya que muestra gran precisión en los datos y la mayoría de empresas de semiconductores dependen de esta herramienta.
